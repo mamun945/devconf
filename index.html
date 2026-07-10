@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devconf</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+         *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: "Raleway", sans-serif;
+         }
+         .standard-width{
+            max-width: 90%;
+            margin:0 auto;
+         }
+    /* common style  */
+    .btn{
+        background-color: #1D4ED8;
+        padding:10px 15px;
+        border:none;
+        border-radius: 5px;
+        color:white;
+        font-size: 20px;
+    }
+
+     /* style */
+     /* nav bar  */
+     header nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 0;
+     }
+     header nav ul{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        font-size: 20px;
+     }
+
+     /* hero section  */
+     .hero-section{
+        background-image: url('./assets/banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height:550px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     }
+
+     .overlay{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+     }
+     .hero-text{
+        position:relative;
+        z-index: 100;
+        color:white;
+     }
+     .hero-text h1{
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: .5em;
+     }
+     .hero-text p{
+        text-align: center;
+        font-size: 20px;
+        line-height:25px;
+     }
+     .btn-container{
+        text-align: center;
+        margin-top: 4em;
+     }
+     
+
+     /* meet the speaker section  */
+     .meet-section{
+        margin-top: 4em;
+     }
+     .meet-section h1{
+        text-align: center;
+        font-size: 50px;
+     }
+     .all-cards{
+        margin-top: 1.5em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+     }
+     .card{
+        border: 1px solid #1D4ED8;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow:1px 1px 5px rgba(0,0,0,0.5);
+     }
+
+     .card img{
+        width: 100%;
+     }
+
+     .card .card-text{
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap:8px
+     }
+     .card-text p:nth-child(1){
+        color:#1D4ED8;
+        font-size:12px;
+        font-weight: bold;
+     }
+     .card-text p:nth-child(3){
+        color:gray;
+        font-size: 12px;
+     }
+
+    </style>
+</head>
+<body>
+
+   <header>
+       <!-- nav bar  -->
+        <nav class="standard-width">
+           <img src="./assets/logo.png" alt="logo">
+           <ul>
+              <li>Speakers</li>
+              <li>Schedule</li>
+              <li>Tracks</li>
+              <li>Venue</li>
+              <li>Blog</li>
+           </ul>
+            <button class="btn">Register Now</button>
+        </nav>
+
+        <!-- hero section  -->
+         <!-- <section class="hero-section">
+             <div class="overlay"></div>
+              <div class="hero-text">
+               <div>
+                <h1>Code. Connect. Create</h1>
+              <p>Join 4,000+ engineers, founders, and builders at the premier developer <br> conference of 2026. Three days of cutting-edge talks, hands-on workshops,<br> and meaningful connections.</p>
+               </div>
+               <div class="btn-container">
+                <button class="btn">Register Now</button>
+               </div>
+              </div>
+             
+         </section> -->
+   </header>
+
+   <!-- meet the speaker section  -->
+   <!-- <section class="meet-section standard-width">
+            <h1>Meet the Speakers</h1>
+            <div class="all-cards">
+                <div class="card">
+                <img src="./assets/andrej.png" alt="man">
+                <div class="card-text">
+                   <p>Al / ML</p>
+                    <h2>Andrej Karpathy</h2>
+                    <p>Pretraining team, Anthropic</p>
+                </div>
+                </div>
+                <div class="card">
+                <img src="./assets/demis.png" alt="man">
+                <div class="card-text">
+                   <p>Cloud & DevOps</p>
+                    <h2>Demis Hassabis</h2>
+                    <p>Co-Founder and CEO, Google DeepMind</p>
+                </div>
+                </div>
+                <div class="card">
+                <img src="./assets/gary.png" alt="man">
+                <div class="card-text">
+                   <p>Frontend</p>
+                    <h2>Gary Marcus</h2>
+                    <p>Staff Engineer, Vercel</p>
+                </div>
+                </div>
+                <div class="card">
+                <img src="./assets/mustafa.png" alt="man">
+                <div class="card-text">
+                   <p>Security</p>
+                    <h2>Mustafa Suleyman</h2>
+                    <p>CEO of Microsoft AI</p>
+                </div>
+                </div>
+            </div>
+   </section>     -->
+   
+   <!-- premium card section -->
+    <!-- <section class="premium-cards">
+        <div class="premium-card">
+
+        </div>
+
+    </section> -->
+</body>
+</html>
