@@ -27,6 +27,15 @@
         font-size: 20px;
     }
 
+    .card-btn{
+        border:1px solid #1D4ED8;
+        color:#1D4ED8;
+        width: 100%;
+        padding:8px 0;
+        border-radius: 5px;
+        margin-top: 1.5em;
+    }
+
      /* style */
      /* nav bar  */
      header nav{
@@ -85,7 +94,7 @@
 
      /* meet the speaker section  */
      .meet-section{
-        margin-top: 4em;
+        margin-top: 5em;
      }
      .meet-section h1{
         text-align: center;
@@ -123,6 +132,82 @@
         color:gray;
         font-size: 12px;
      }
+
+    /* premium card section */
+    .premium-cards-section{
+        margin: 10em 8em;
+    }
+    .cards-heading{
+        margin-bottom: 1.5em;
+    }
+    .cards-heading h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .cards-heading p{
+        font-size: 12px;
+        text-align: center;
+        margin-top:.5em;
+    }
+    .premium-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px;
+    }
+    .premium-card{
+        border:1px solid #1D4ED8;
+        padding: 2em;
+        border-radius:8px;
+    }
+    .upper-text{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+    .upper-text p:nth-child(1){
+       font-size: 12px;
+       font-weight: bold;
+    }
+     .upper-text p:nth-child(3){
+       font-size: 11px;
+    }
+    .line{
+        border-top: 1px solid rgba(128, 128, 128, 0.483);
+        margin: 1em 0;
+    }
+    .primium-card-text-below{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        padding-left: 1em;
+        font-size: 12px;
+    }
+    .primium-card-text-below li{
+        list-style-type: disc;
+    }
+    .primium-card-text-below li::marker {
+       color: #3b82f6;
+   }
+   .pro{
+     color:#3b82f6;
+   }
+   .dollar{
+    color:aliceblue;
+   }
+   .text-color{
+    color:gray;
+   }
+   .bg-color{
+    background-color:black;
+   }
+   .premiumButton{
+    color:white;
+    background-color: #1D4ED8;
+   }
+   .contact-btn{
+    border:1px solid black;
+    color:black;
+   }
 
     </style>
 </head>
@@ -198,11 +283,67 @@
    </section>    
    
    <!-- premium card section -->
-    <!-- <section class="premium-cards">
-        <div class="premium-card">
+    <section class="premium-cards-section standard-width">
+         <div class="cards-heading">
+            <h1>Secure Your Spot</h1>
+            <p>Early-bird pricing ends August 15, 2026.</p>
+         </div>
+        <div class="premium-cards">
+            <div class="premium-card">
+            <div class="upper-text">
+            <p>STANDARD</p>
+            <h1>$399</h1>
+            <p>per person</p>
+          </div>
+           <div class="line"></div>
+           <ul class="primium-card-text-below">
+             <li>Access to all 3 conference days</li>
+             <li>48 curated technical talks</li>
+             <li>2 workshop sessions</li>
+             <li>Networking lunch & coffee breaks</li>
+             <li>Conference swag bag</li>
+             <li>Digital recordings (30 days)</li>
+           </ul>
+           <button class="card-btn">Get Standard</button>
+            </div>
 
+            <div class="premium-card bg-color">
+            <div class="upper-text">
+            <p class="pro">PRO</p>
+            <h1 class="dollar">$749</h1>
+            <p class="text-color">per person</p>
+          </div>
+           <div class="line"></div>
+           <ul class="primium-card-text-below text-color">
+             <li>Everything in Standard</li>
+             <li>Unlimited workshop access</li>
+             <li>Speaker meet & greet</li>
+             <li>VIP networking dinner</li>
+             <li>Lifetime recording access</li>
+             <li>1-on-1 mentorship (30 min)</li>
+           </ul>
+           <button class="card-btn premiumButton">Get Pro</button>
+            </div>
+
+            <div class="premium-card">
+            <div class="upper-text">
+            <p>TEAM</p>
+            <h1>$5,999</h1>
+            <p>up to 10 people</p>
+          </div>
+           <div class="line"></div>
+           <ul class="primium-card-text-below">
+             <li>Everything in Pro (10 seats)</li>
+             <li>Dedicated team lounge access</li>
+             <li>Private workshop booking</li>
+             <li>Company logo on event page</li>
+             <li>Recruitment booth (1 day)</li>
+             <li>Priority customer support</li>
+           </ul>
+           <button class="card-btn contact-btn">Contact Us</button>
+            </div>
         </div>
 
-    </section> -->
+    </section>
 </body>
 </html>
